@@ -84,35 +84,4 @@
   display: grid;
   place-items: center;
   gap: 3rem;
-
-  & .info {
-    width: min(80vw,550px);
-    font: 0.85rem/1.8 futura,sans-serif;
-    color: rgba(255,255,255,0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-
-    & h1 {
-      font-size: 1.25rem;
-      color: rgb(204, 117, 107);
-    }
-
-    & img { width: 30vmin; }
-  }
-
-  & footer {
-    display: flex;
-    gap: 1rem;
-    padding-bottom: 3rem;
-
-    & ion-icon {
-      cursor: pointer;
-      color: rgb(93, 106, 93);
-      font-size: 1.1rem;
-
-      &:hover { color: rgb(121, 149, 121); }
-    }
-  }
 }
