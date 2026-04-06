@@ -75,23 +75,26 @@
   color: rgb(204, 117, 107);
 }
 
-.content .info img {
-  width: 30vmin;
-}
+    & img { width: 30vmin; }
+  }
+ 
 
-/* FOOTER */
-.content footer {
-  display: flex;
-  gap: 1rem;
-  padding-bottom: 3rem;
-}
+  & footer {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 3rem;
 
-.content footer ion-icon {
-  cursor: pointer;
-  color: rgb(93, 106, 93);
-  font-size: 1.1rem;
-}
+    & ion-icon {
+      cursor: pointer;
+      color: rgb(93, 106, 93);
+      font-size: 1.1rem;
 
-.content footer ion-icon:hover {
-  color: rgb(121, 149, 121);
+      &:hover { color: rgb(121, 149, 121); }
+    }
+  }
 }
+ .fun-facts {
+font-size: 16px;
+      color: rgb(204, 117, 107);
+  }
+
