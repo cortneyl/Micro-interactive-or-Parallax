@@ -66,7 +66,7 @@
 
     &:nth-of-type(1) {background-image:url(/photos/sky.png);}
     &:nth-of-type(2) { background-image: url(/photos/Sun.png) }
-    &:nth-of-type(3) { background-image: url(/photos/w.jpg) }
+    &:nth-of-type(3) { background-image: url(/photos/water.png) }
     &:nth-of-type(4) { background-image: url(/photos/Front.png) }
   }}
 
@@ -77,7 +77,7 @@
 }
 
 .content {
-  background-color: 441341;
+  background-color: #441341;
   display: grid;
   place-items: center;
   gap: 3rem;
