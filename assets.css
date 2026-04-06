@@ -76,7 +76,7 @@
 }
 
     & img { width: 30vmin; }
-  }
+
  
 
   & footer {
@@ -92,7 +92,6 @@
       &:hover { color: rgb(121, 149, 121); }
     }
   }
-}
  .fun-facts {
 font-size: 16px;
       color: rgb(204, 117, 107);
