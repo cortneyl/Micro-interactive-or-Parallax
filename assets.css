@@ -64,12 +64,10 @@
     z-index: -1;
     transition: transform 0.1 ease-out;
 
-    &:nth-of-type(1) { background-image:  }
-    &:nth-of-type(2) { background-image:  }
-    &:nth-of-type(3) { background-image:  }
-    &:nth-of-type(4) { background-image:  }
-    &:nth-of-type(5) { background-image:  }
-    &:nth-of-type(6) { background-image:  }
+    &:nth-of-type(1) {background-image:url(/photos/Sun.png);}
+    &:nth-of-type(2) { background-image: url(/photos/sky.png) }
+    &:nth-of-type(3) { background-image: url(/photos/Water.jpg) }
+    &:nth-of-type(4) { background-image: url(/photos/Front.png) }
   }}
 
 @media (height < 700px) {
