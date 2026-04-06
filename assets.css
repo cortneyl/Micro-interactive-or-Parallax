@@ -7,6 +7,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow-y: scroll;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  background: red;
+}
+
+main {
+  transform-style: preserve-3d;
+}
 
 /* PARALLAX CONTAINER */
 .parallax {
@@ -14,6 +30,7 @@
   width: 100%;
   height: 100vh;
   list-style-type: none;
+  transform-style: preserve-3d;
 }
 
 /* LAYERS */
@@ -21,27 +38,38 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-position: center 25%;
-  background-size: cover;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  /* background-position: center 25%; */
+  background-size: 100%;
   z-index: -1;
   transition: transform 0.1s ease-out;
+  background-repeat: no-repeat;
 }
 
 /* INDIVIDUAL LAYERS */
 .parallax .layer:nth-of-type(1) {
   background-image: url(/photos/sky.png);
+  transform: translateZ(-1px) scale(2);       /* slowest — barely drifts up */
 }
 
 .parallax .layer:nth-of-type(2) {
   background-image: url(/photos/Sun.png);
+  top: -100px;
+  transform: translateZ(-0.75px) scale(1.75); /* slower than water → drifts down relative to it, renders behind it */
 }
 
 .parallax .layer:nth-of-type(3) {
   background-image: url(/photos/water.png);
+  transform: translateZ(-0.4px) scale(1.4);   /* faster than sun → moves visibly upward, renders in front of sun */
 }
 
 .parallax .layer:nth-of-type(4) {
   background-image: url(/photos/Front.png);
+  bottom: 0;
+  background-position: bottom left;           /* foreground, no parallax */
 }
 
 /* MOBILE HEIGHT FIX */
