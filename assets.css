@@ -14,7 +14,7 @@
   height: 100vh;
   list-style-type: none;
 
-  & .layer {
+.layer {
     position: absolute;
     width: inherit;
     height: inherit;
@@ -28,6 +28,8 @@
     &:nth-of-type(3) { background-image: url(/photos/water.png) }
     &:nth-of-type(4) { background-image: url(/photos/Front.png) }
   }}
+
+  
 
 @media (height < 700px) {
   .parallax {
