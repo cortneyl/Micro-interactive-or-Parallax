@@ -1,10 +1,14 @@
-const layers = document.querySelectorAll('.layer');
+document.addEventListener('DOMContentLoaded', () => {
+  const layers = document.querySelectorAll('.layer');
 
-function parallax() {
-  const y = window.scrollY;
-  for (let i = 1; i < layers.length; i++) {
-    layers[layers.length-i].style.transform = `translateY(${(i*0.1) * y}px)`;
+  function parallax() {
+    const y = window.scrollY;
+
+    for (let i = 0; i < layers.length; i++) {
+      const speed = (i + 1) * 0.1;
+      layers[i].style.transform = `translateY(${y * speed}px)`;
+    }
   }
-}
 
-window.addEventListener('scroll',parallax,false);
+  window.addEventListener('scroll', parallax);
+});
