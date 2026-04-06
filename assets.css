@@ -60,7 +60,7 @@
  
 
   & footer {
-    display: flex;
+  
     gap: 1rem;
     padding-bottom: 3rem;
 
@@ -77,4 +77,8 @@
 font-size: 16px;
       color: rgb(204, 117, 107);
   }
+h2 {
+  font-size: 35px;
+      color: rgb(204, 117, 107);
+}
 
