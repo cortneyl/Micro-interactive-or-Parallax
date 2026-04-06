@@ -17,7 +17,7 @@ body {
   overflow-y: scroll;
   perspective: 1px;
   transform-style: preserve-3d;
-  background: red;
+  background: #00a19a;
 }
 
 main {
@@ -81,7 +81,7 @@ main {
 
 /* CONTENT SECTION */
 .content {
-  background-color: #441341;
+  background-color: #4c0043;
   display: grid;
   place-items: center;
   gap: 3rem;
